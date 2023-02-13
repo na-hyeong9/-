@@ -31,6 +31,8 @@
         <p>
        		<a href=" https://github.com/hady1024">하두연 깃허브</a>
         </p>
+    </div>
+</details>
 
 ​        
 
