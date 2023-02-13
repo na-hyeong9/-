@@ -6,13 +6,13 @@
 
 ---
 
-| 팀원   | 담당       | 비고 |
-| ------ | ---------- | ---- |
-| 김나형 | FE         | Qna  |
-| 김선교 | Full stack |      |
-| 이성훈 | BE         |      |
-| 최민아 | FE         |      |
-| 하두연 | BE         |      |
+| 팀원   | 담당       | 비고                           |
+| ------ | ---------- | ------------------------------ |
+| 김나형 | FE         | qna/accounts/nav  담당 및 팀장 |
+| 김선교 | Full stack |                                |
+| 이성훈 | BE         |                                |
+| 최민아 | FE         |                                |
+| 하두연 | BE         |                                |
 
 <details> <summary>팀원 개인깃헙</summary>
     <div markdown="1"> 
@@ -32,6 +32,7 @@
        		<a href=" https://github.com/hady1024">하두연 깃허브</a>
         </p>
 
+​        
 
 ### 활용한 기술 스택
 
@@ -51,9 +52,6 @@
 </div>
 
 
-```
-
-```
 
 
 
@@ -210,7 +208,7 @@ photospots (photospot) model<br>
 		QnA model/view<br><br>
         <b>김선교</b><br><br>
         검색 model 및 호텔 mtv 진행중<br><br>
-        <b>이성훈b><br><br>
+        <b>이성훈</b><br><br>
         friend 카테고리에 user foreign key 넣기<br>
 		댓글에 유저 이미지 불러오기<br>
 		index와 detail에 유저 프로필 사진 추가<br>
@@ -224,6 +222,7 @@ photospots (photospot) model<br>
         유저기능보완<br><br>
     </div>
 </details>
+
 
 <details> <summary>11.14 스크럼 일지</summary>
     <div markdown="1">
@@ -247,6 +246,7 @@ photospots (photospot) model<br>
 	</div>
 </details>
 
+
 <details> <summary>11.15 스크럼 일지</summary>
     <div markdown="1">
         <b>김나형</b><br><br>
@@ -265,6 +265,7 @@ photospots (photospot) model<br>
         mtpage 내 게시글, 좋아요 글 모아보기
     </div>
 </details>
+
 
 <details> <summary>11.16 스크럼 일지</summary>
     <div markdown="1">
@@ -308,6 +309,7 @@ photospots (photospot) model<br>
         user detail.html 수정
     </div>
 </details>
+
 <details>
     <summary>11.18 스크럼 일지</summary>
     <div markdown="1">
@@ -330,13 +332,13 @@ photospots (photospot) model<br>
 	</div>
 </details>
 
-
 <details>
     <summary>11.21 스크럼 일지</summary>
     <div markdown="1">
         <b>김나형</b><br><br>
-		chats(생성, 목록, 개별채팅방) 템플릿 수정
-		index 오류 재확인
+		chats(생성, 목록, 개별채팅방) 템플릿 수정<br>
+		index 오류 재확인<br>
+        Qna/동행친구 찾기 배너 생성<br>
 		발자국 정리<br><br>
         <b>김선교</b><br><br>
 		백엔드 전반<br><br>
@@ -352,6 +354,7 @@ photospots (photospot) model<br>
 		mypage css 수정
 	</div>
 </details>
+
 
 
 ### 프로젝트를 마치며
