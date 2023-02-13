@@ -87,20 +87,15 @@ __`프로젝트 기간`__ 11.09 (수) ~ 11.21 (월)
 - 숙소
 
   - 크롤링을 통한 숙소 목록 제공
-  - 검색 (숙소만 검색 가능한 제공)
+  - 검색(숙소만 검색 가능)
+  - 숙소 후기 (써머노트 활용)
 
-  - 숙소 후기
-    - 써머노트 활용
+- 마이페이지
 
-- 프로필
+  - 내 동행 게시물 목록/ 좋아요한 글 목록/ 포토스팟 목록 (각 게시물 detail로 연결)
 
-  - 내 동행 게시물 목록 /좋아요한 글 목록 / 포토스팟 목록
-
-    각 게시물 detail로 연결
-
-  - 계정 관리 (사용자 소개/ 비밀번호 변경/회원 탈퇴)
-
-  - 팔로우/팔로잉
+  - 계정 관리(사용자 소개/ 비밀번호 변경/ 회원 탈퇴)
+  - 팔로우 팔로잉
 
 - 검색
 
@@ -116,15 +111,17 @@ __`프로젝트 기간`__ 11.09 (수) ~ 11.21 (월)
   - 포토스팟 인기 게시물
   - 최신 동행글 미리보기
 
+
+
 #### ERD
 
 ![ZB9gKNiw6Rjb634Jk](README.assets/ZB9gKNiw6Rjb634Jk.png)
 
+
+
 #### 피그마 화면 설계
 
-![Group 1 (2)](README.assets/Group 1 (2).png)
-
-
+![pigma](README.assets/pigma.png)
 
 첨부 자료
 
@@ -225,8 +222,6 @@ photospots (photospot) model<br>
         유저기능보완<br><br>
     </div>
 </details>
-
-
 <details> <summary>11.14 스크럼 일지</summary>
     <div markdown="1">
         <br>
@@ -248,8 +243,6 @@ photospots (photospot) model<br>
     	마이페이지 보완(내 게시글, 좋아요글 모아보기)<br><br>
 	</div>
 </details>
-
-
 <details> <summary>11.15 스크럼 일지</summary>
     <div markdown="1">
         <b>김나형</b><br><br>
@@ -268,8 +261,6 @@ photospots (photospot) model<br>
         mtpage 내 게시글, 좋아요 글 모아보기
     </div>
 </details>
-
-
 <details> <summary>11.16 스크럼 일지</summary>
     <div markdown="1">
         <b>김나형</b><br><br>
