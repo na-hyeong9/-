@@ -34,6 +34,7 @@
     </div>
 </details>
 
+
 ​        
 
 ### 활용한 기술 스택
@@ -121,7 +122,7 @@ __`프로젝트 기간`__ 11.09 (수) ~ 11.21 (월)
 
 #### 피그마 화면 설계
 
-![Group 1 (1)](README.assets/Group 1 (1).png)
+![Group 1 (2)](README.assets/Group 1 (2).png)
 
 
 
