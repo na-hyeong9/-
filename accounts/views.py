@@ -16,6 +16,7 @@ from django.views.decorators.http import require_POST
 
 from .forms import CustomUserChangeForm, CustomUserCreationForm, ProfileForm
 from .models import Profile
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -225,6 +226,7 @@ import requests
 
 state_token = secrets.token_urlsafe(16)
 
+
 # 네이버 보류
 def naver_request(request):
     naver_api = "https://nid.naver.com/oauth2.0/authorize?response_type=code"
@@ -246,16 +248,21 @@ def naver_callback(request):
         "redirect_uri": "http://127.0.0.1:8000/accounts/naver/login/callback/",
     }
     naver_token_request_url = "https://nid.naver.com/oauth2.0/token"
-    access_token = requests.post(naver_token_request_url, data=data).json()[
-        "access_token"
-    ]
-    headers = {"Authorization": f"Bearer ${access_token}"}
+    response = requests.post(naver_token_request_url, params=data)
+    response.raise_for_status()  # 예외처리 추가
+    response_data = response.json()
+    if "access_token" not in response_data:
+        # access_token이 없을 경우 에러 메시지를 보여줌
+        return HttpResponse("Failed to get access token")
+
+    access_token = response.json()["access_token"]
+    headers = {"Authorization": f"Bearer {access_token}"}
     naver_call_user_api = "https://openapi.naver.com/v1/nid/me"
     naver_user_information = requests.get(naver_call_user_api, headers=headers).json()
 
     naver_id = naver_user_information["response"]["id"]
     naver_nickname = naver_user_information["response"]["nickname"]
-    # naver_email = naver_user_information["response"]["email"]
+    naver_email = naver_user_information["response"]["email"]
 
     if get_user_model().objects.filter(naver_id=naver_id).exists():
         naver_user = get_user_model().objects.get(naver_id=naver_id)
